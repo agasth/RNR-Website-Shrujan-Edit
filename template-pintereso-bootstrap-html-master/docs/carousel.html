@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Add your images to the carousel -->
+            <div class="carousel-item" id="img1">
+                <img src="Edited/image1.JPG" class="d-block w-100 img-fluid"
+                    style="object-fit: cover; max-height:800px;" alt="Image 1">
+            </div>
+            <div class="carousel-item" id="img2">
+                <img src="Edited/image2.JPG" class="d-block w-100 img-fluid" alt="Image 2">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image3.JPG" class="d-block w-100  max-height:800px"
+                    style="object-fit: cover; max-height:800px;" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img4">
+                <img src="./Edited/image4.JPG" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img5">
+                <img src="./Edited/image5.JPG" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img6">
+                <img src="./Edited/image6.JPG" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img7">
+                <img src="./Edited/image7.JPG" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img8">
+                <img src="./Edited/image8.JPG" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img9">
+                <img src="./Edited/image9.JPG" class="d-block w-100 max-height:800px "
+                    style="object-fit: cover; max-height:800px;" alt="Image 9">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="i./Edited/image4 " class=" d-block w-100" style="object-fit: cover; " alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item" id="img3">
+                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
+            </div>
+            <!-- Add more images similarly -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script>
+        // Function to read URL query parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the 'img' query parameter from the URL
+        const imgIndex = getQueryParam('img');
+
+        // Set the corresponding carousel item to 'active'
+        if (imgIndex) {
+            const activeItem = document.getElementById(`img${imgIndex}`);
+            if (activeItem) {
+                activeItem.classList.add('active');
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

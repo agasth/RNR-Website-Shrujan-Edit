@@ -52,7 +52,7 @@ body {
   font-size: 18px;
   line-height: 35px;
   font-weight: 400;
-  color: #b3b3b3;
+  color: white;
   background-color: black;
   overflow-x: hidden;
 }
@@ -448,7 +448,7 @@ body .sm-clean li.current_page_item > a {
 }
 
 .medium-text {
-  color: #000;
+  color: #eb3935;
   font-size: 60px;
   line-height: 120%;
   font-weight: 700;
@@ -498,7 +498,7 @@ body .sm-clean li.current_page_item > a {
 }
 
 body .social a {
-  color: #000 !important;
+  color: #eb3935 !important;
   transition: all 0.3s ease;
 }
 
@@ -1076,7 +1076,7 @@ h1.big-text {
 
 #about {
   background-image: url(images/on_white_right.png);
-  background-color: #ffffff;
+  background-color: #black;
   background-position: right center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -2036,7 +2036,7 @@ body.blog {
   max-width: 100%;
   margin: 0 auto;
   font-size: 22px;
-  color: #000;
+  color: #eb3935;
 }
 
 .contact-form p {

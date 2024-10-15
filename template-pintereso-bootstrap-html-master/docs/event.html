@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Shot by REST N RUST</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script
+		type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body>
+
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+		<a class="navbar-brand font-weight-bolder mr-3" href="index copy.html"><img
+				src="assets/img/Artboard 8@300 copy.png"></a>
+		<button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault"
+			aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarsDefault">
+			<ul class="navbar-nav mr-auto align-items-center">
+				<form class="bd-search hidden-sm-down">
+					<input type="text" class="form-control bg-graylight border-0 font-weight-bold" id="search-input"
+						placeholder="Search..." autocomplete="off">
+					<div class="dropdown-menu bd-search-results" id="search-results">
+					</div>
+				</form>
+			</ul>
+			<ul class="navbar-nav ml-auto align-items-center">
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="post.html">Post</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="author.html"><img class="rounded-circle mr-2" src="assets/img/av.png"
+							width="30"><span class="align-middle">Author</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						<svg style="margin-top:10px;" class="_3DJPT" version="1.1" viewbox="0 0 32 32" width="21"
+							height="21" aria-hidden="false" data-reactid="71">
+							<path
+								d="M7 15.5c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5zm21.5-3.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5zm-12.5 0c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z"
+								data-reactid="22"></path>
+						</svg>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="dropdown02">
+						<h4 class="dropdown-header display-4">Download Pintereso<br /> HTML Bootstrap Template</h4>
+						<div class="dropdown-divider">
+						</div>
+						<span class="dropdown-item"><a
+								href="https://github.com/wowthemesnet/template-pintereso-bootstrap-html/archive/master.zip"
+								class="btn btn-primary d-block"><i class="fa fa-download"></i> Download</a></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav> -->
+	<!-- 
+	<header class="header-holder">
+		<div class="menu-wrapper center-relative relative">
+			<div class="header-logo">
+				<a href="index.html">
+					<img src="./assets/img/logo.png" alt="Seppo">
+				</a>
+			</div>
+
+			<div class="toggle-holder">
+				<div id="toggle">
+					<div class="first-menu-line"></div>
+					<div class="second-menu-line"></div>
+					<div class="third-menu-line"></div>
+				</div>
+			</div>
+
+			<div class="menu-holder">
+				<nav id="header-main-menu">
+					<ul class="main-menu sm sm-clean" data-smartmenus-id="17182185371134895">
+						<li class="active">
+							<a href="#home">Home</a>
+						</li>
+						<li>
+							<a href="#services">Services</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#clients">Clients</a>
+						</li>
+						<li>
+							<a href="#portfolio">Portfolio</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+	</header> -->
+	</div>
+	<main role="main">
+
+
+
+		<section class="mt-4 mb-5">
+			<div class="container mb-4">
+
+				<div class="row">
+				</div>
+			</div>
+			<div class="container-fluid">
+				<!-- <div id="modal">
+					<button class="close-btn" onclick="closeModal()"><i class="bi bi-x-lg"></i></button>
+					<button type="button" class="btn-close" aria-label="Close" onclick="closeModal()"></button>
+					<img id="modalImg" src="" height="100" width="100" />
+				</div> -->
+
+				<div class="row">
+					<div class="card-columns">
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0258.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=1"><img class="card-img" src="Edited/image1.JPG"
+									alt="Image 1"></a>
+
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0888.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=2"><img class="card-img" src="Edited/image2.JPG"
+									alt="Image 1"></a>
+
+							<div class="overlay">
+								<!-- <div class="more">
+									<a href="post.html">
+										<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Full Image </a>
+								</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0892.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=3"><img class="card-img" src="Edited/image3.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+									<a href="post.html">
+										<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+								</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image4.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+									<a href="post.html">
+										<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+								</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=5"><img class="card-img" src="Edited/image5.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+															<a href="post.html">
+																<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+														</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=6"><img class="card-img" src="Edited/image6.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																<a href="post.html">
+																	<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+															</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=7"><img class="card-img" src="Edited/image7.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																	<a href="post.html">
+																		<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=8"><img class="card-img" src="Edited/image8.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																		<a href="post.html">
+																			<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																	</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=9"><img class="card-img" src="Edited/image9.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																			<a href="post.html">
+																				<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																		</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image10.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																				<a href="post.html">
+																					<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																			</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image11.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																					<a href="post.html">
+																						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																				</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image12.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																						<a href="post.html">
+																							<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																					</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image13.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																							<a href="post.html">
+																								<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																						</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image14.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																								<a href="post.html">
+																									<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																							</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image15.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																									<a href="post.html">
+																										<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																								</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image16.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																										<a href="post.html">
+																											<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																									</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image17.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																											<a href="post.html">
+																												<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																										</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image18.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																												<a href="post.html">
+																													<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																											</div> -->
+							</div>
+						</div>
+						<div class="card card-pin">
+							<!-- <img class="card-img" src="Edited/IMG_0897.JPG" alt="Card image"> -->
+							<a href="carousel.html?img=4"><img class="card-img" src="Edited/image19.JPG"
+									alt="Image 1"></a>
+							<div class="overlay">
+								<!-- <div class="more">
+																													<a href="post.html">
+																														<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+																												</div> -->
+							</div>
+						</div>
+
+
+
+
+						<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+</section>
+
+</main>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/theme.js"></script>
+
+<footer class="footer pt-5 pb-5 text-center">
+
+	<div class="container">
+
+		<div class="socials-media">
+
+			<ul class="list-unstyled">
+				<li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-facebook"></i></a>
+				</li>
+				<li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-twitter"></i></a>
+				</li>
+				<li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-instagram"></i></a>
+				</li>
+				<li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-google-plus"></i></a>
+				</li>
+				<li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-behance"></i></a>
+				</li>
+				<li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-dribbble"></i></a>
+				</li>
+			</ul>
+
+		</div>
+
+		<!--
+              All the links in the footer should remain intact.
+              You may remove the links only if you donate:
+              https://www.wowthemes.net/freebies-license/
+            -->
+		<!-- <p>© <span class="credits font-weight-bold">
+				<a target="_blank" class="text-dark"
+					href="https://www.wowthemes.net/pintereso-free-html-bootstrap-template/"><u>Pintereso Bootstrap
+						HTML Template</u> by WowThemes.net.</a>
+			</span>
+		</p> -->
+
+
+	</div>
+
+</footer>
+<script type="text/javascript">
+
+	// function showImage(src) {
+	// 	document.getElementById('modalImg').src = src;
+	// 	document.getElementById('modal').style.display = "flex";
+
+	// }
+
+	function closeModal() {
+		document.getElementById('modal').style.display = "none";
+		document.getElementById('modal').style.Color = "red";
+	}
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+	crossorigin="anonymous"></script>
+</body>
+
+
+</html>
