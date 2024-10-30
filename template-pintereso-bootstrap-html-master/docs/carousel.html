@@ -4,76 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
+    <title>Responsive Image Carousel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Additional styles to make the images fit responsively */
+        .carousel-item {
+            height: 80vh;
+            /* Set the height of the carousel */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            /* Maintain aspect ratio */
+            max-height: 100%;
+            /* Ensure it doesn't exceed the height of the carousel */
+            object-fit: contain;
+            /* Change from cover to contain to maintain aspect ratio */
+        }
+
+        /* Optional: Make the carousel control buttons more visible */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background for better visibility */
+        }
+    </style>
 </head>
 
 <body>
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <!-- Add your images to the carousel -->
-            <div class="carousel-item" id="img1">
-                <img src="Edited/image1.JPG" class="d-block w-100 img-fluid"
-                    style="object-fit: cover; max-height:800px;" alt="Image 1">
+            <div class="carousel-item active" id="img1">
+                <img src="Edited/image1.JPG" class="d-block" alt="Image 1" loading="lazy">
             </div>
             <div class="carousel-item" id="img2">
-                <img src="Edited/image2.JPG" class="d-block w-100 img-fluid" alt="Image 2">
+                <img src="Edited/image2.JPG" class="d-block" alt="Image 2" loading="lazy">
             </div>
             <div class="carousel-item" id="img3">
-                <img src="./Edited/image3.JPG" class="d-block w-100  max-height:800px"
-                    style="object-fit: cover; max-height:800px;" alt="Image 3">
+                <img src="Edited/image3.JPG" class="d-block" alt="Image 3" loading="lazy">
             </div>
             <div class="carousel-item" id="img4">
-                <img src="./Edited/image4.JPG" class="d-block w-100" alt="Image 3">
+                <img src="Edited/image4.JPG" class="d-block" alt="Image 4" loading="lazy">
             </div>
             <div class="carousel-item" id="img5">
-                <img src="./Edited/image5.JPG" class="d-block w-100" alt="Image 3">
+                <img src="Edited/image5.JPG" class="d-block" alt="Image 5" loading="lazy">
             </div>
             <div class="carousel-item" id="img6">
-                <img src="./Edited/image6.JPG" class="d-block w-100" alt="Image 3">
+                <img src="Edited/image6.JPG" class="d-block" alt="Image 6" loading="lazy">
             </div>
             <div class="carousel-item" id="img7">
-                <img src="./Edited/image7.JPG" class="d-block w-100" alt="Image 3">
+                <img src="Edited/image7.JPG" class="d-block" alt="Image 7" loading="lazy">
             </div>
             <div class="carousel-item" id="img8">
-                <img src="./Edited/image8.JPG" class="d-block w-100" alt="Image 3">
+                <img src="Edited/image8.JPG" class="d-block" alt="Image 8" loading="lazy">
             </div>
             <div class="carousel-item" id="img9">
-                <img src="./Edited/image9.JPG" class="d-block w-100 max-height:800px "
-                    style="object-fit: cover; max-height:800px;" alt="Image 9">
+                <img src="Edited/image9.JPG" class="d-block" alt="Image 9" loading="lazy">
             </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="i./Edited/image4 " class=" d-block w-100" style="object-fit: cover; " alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item" id="img3">
-                <img src="./Edited/image4" class="d-block w-100" alt="Image 3">
-            </div>
-            <!-- Add more images similarly -->
         </div>
+
+        <!-- Carousel controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
